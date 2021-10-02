@@ -123,14 +123,16 @@
 											<p>
 												This is my undergrad capstone project. A quadrotor flight controller was designed from scratch on STM32 and ESP32. 
 												The second part of the project was to design pattern formation algorithm with obstacle avoidance. To aid in faster development, I designed tools such as swarm simulator and automatic PID tuner (based on dynamic model).
-												The simulator helped in implementing different algorithms without risking hardware damage and was incredibly useful during covid-19 lockdown.
-											
+												The simulator helped in implementing different algorithms without risking hardware damage and was incredibly useful during covid-19 lockdown. I worked on the following tasks:
+										
 											<ul> 
 
-											<li> Decide which electronic components to purchase based on temperature requirements while constraining to the budget.</li>
-											<li> Develop a system with feedback of thermocouple to control temperature (Algorithm used: PI control, Exponential Smoothing)</li>
-											<li> Develop the algorithm of how the machine has to be operated (manual/autonomous/safety features)</li>
-											<li> Design and fabricate the circuit board.</li>
+											<li>State Estimation (Kalman, Complementary and Butterworth filter) for 12 states.</li>
+											<li>Control Architechture for altitude, climbrate and position lock.</li>
+											<li>Dynamic modelling, linearisation and implementing multiple control methods (LQR, PID)</li>
+											<li>Implementing collaborative behaviour(pattern formation, rendezvous) through Multiagent theory based on graph networks. </li>\
+											<li>Analysing effect of connectivity on collaborative robots.</li>
+											<li>[Just for fun] - Calculating NDVI index and image stiching from video captured from quadrotor.</li>
 											</ul>
 											</p>
 										  </div>
@@ -147,31 +149,34 @@
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/p3.jpg" alt="" /></a>
 										
-																				<!-- The Modal -->	
-																				<div class="modal">
-																					<div class="modal-header">
-																					  <span class="close-btn">&times;</span>
-																					  <h1><b>Collaborative Autonomous Aerial Robots</b></h1>
-																					</div>
-																					<div class="modal-content" style="font-size:70%; text-align: left">
-																					  <p>
-																						  This is my undergrad capstone project. A quadrotor flight controller was designed from scratch on STM32 and ESP32. 
-																						  The second part of the project was to design pattern formation algorithm with obstacle avoidance. To aid in faster development, I designed tools such as swarm simulator and automatic PID tuner (based on dynamic model).
-																						  The simulator helped in implementing different algorithms without risking hardware damage and was incredibly useful during covid-19 lockdown.
-																					  
-																					  <ul> 
-										  
-																					  <li> Decide which electronic components to purchase based on temperature requirements while constraining to the budget.</li>
-																					  <li> Develop a system with feedback of thermocouple to control temperature (Algorithm used: PI control, Exponential Smoothing)</li>
-																					  <li> Develop the algorithm of how the machine has to be operated (manual/autonomous/safety features)</li>
-																					  <li> Design and fabricate the circuit board.</li>
-																					  </ul>
-																					  </p>
-																					</div>
-																					<div class="modal-footer">
-																					  <p>Watch on youtube <a href="https://www.youtube.com/watch?v=-IzKpLBw5eM">here</a></p>
-																					</div>
-																				  </div>		
+										<!-- The Modal -->	
+										<div class="modal">
+											<div class="modal-header">
+												<span class="close-btn">&times;</span>
+												<h1><b>Inverse Kinematics of Kuka KR3</b></h1>
+											</div>
+											<div class="modal-content" style="font-size:70%; text-align: left">
+												<p>
+													This was my first experience with robotics. Performed inverse kinematics on KUKA KR3 (6 DOF) using Peter Corke's toolbox.
+													However, the inverse kinematics algorithm was misbehaving at singular points, so I worked out my own algorithm. 
+													My solution was partly based on geometric solution and then iterative solution at end effector. The algorithm successfully solved the problems encountered at singular positions,
+													however it was slower compared to the toolbox algorithm. The highlights to the project are: 
+													
+												
+												<ul> 
+
+												<li> Forward and inverse kinematics on SCARA robot in python. </li>
+												<li> DH parameterisation of Kuka KR3 from datasheet.</li>
+												<li> Forward and Inverse Kinematics using DH parameters and simulating using Peter corke's toolbox</li>
+												<li> Solution at singular positions using geometric and iterative solution. </li>
+												<li> Trajectory generation with quintic polynmoial.</li>
+												</ul>
+												</p>
+											</div>
+											<div class="modal-footer">
+												<p>Watch on youtube <a href="https://www.youtube.com/watch?v=-IzKpLBw5eM">here</a></p>
+											</div>
+											</div>		
 
 
 										
@@ -185,31 +190,28 @@
 										<a href="#" class="image fit"><img src="images/nld.png" alt="" /></a>
 
 
-																				<!-- The Modal -->	
-																				<div class="modal">
-																					<div class="modal-header">
-																					  <span class="close-btn">&times;</span>
-																					  <h1><b>Collaborative Autonomous Aerial Robots</b></h1>
-																					</div>
-																					<div class="modal-content" style="font-size:70%; text-align: left">
-																					  <p>
-																						  This is my undergrad capstone project. A quadrotor flight controller was designed from scratch on STM32 and ESP32. 
-																						  The second part of the project was to design pattern formation algorithm with obstacle avoidance. To aid in faster development, I designed tools such as swarm simulator and automatic PID tuner (based on dynamic model).
-																						  The simulator helped in implementing different algorithms without risking hardware damage and was incredibly useful during covid-19 lockdown.
-																					  
-																					  <ul> 
-										  
-																					  <li> Decide which electronic components to purchase based on temperature requirements while constraining to the budget.</li>
-																					  <li> Develop a system with feedback of thermocouple to control temperature (Algorithm used: PI control, Exponential Smoothing)</li>
-																					  <li> Develop the algorithm of how the machine has to be operated (manual/autonomous/safety features)</li>
-																					  <li> Design and fabricate the circuit board.</li>
-																					  </ul>
-																					  </p>
-																					</div>
-																					<div class="modal-footer">
-																					  <p>Watch on youtube <a href="https://www.youtube.com/watch?v=-IzKpLBw5eM">here</a></p>
-																					</div>
-																				  </div>		
+									<!-- The Modal -->	
+									<div class="modal">
+										<div class="modal-header">
+											<span class="close-btn">&times;</span>
+											<h1><b>Chaotic Analysis of Inverse Pendulum and visualisation of Fractals</b></h1>
+										</div>
+										<div class="modal-content" style="font-size:70%; text-align: left">
+											<p>
+												SO we did this and that heere
+											<ul> 
+
+											<li> Decide which electronic components to purchase based on temperature requirements while constraining to the budget.</li>
+											<li> Develop a system with feedback of thermocouple to control temperature (Algorithm used: PI control, Exponential Smoothing)</li>
+											<li> Develop the algorithm of how the machine has to be operated (manual/autonomous/safety features)</li>
+											<li> Design and fabricate the circuit board.</li>
+											</ul>
+											</p>
+										</div>
+										<div class="modal-footer">
+											<p>Watch on youtube <a href="https://www.youtube.com/watch?v=-IzKpLBw5eM">here</a></p>
+										</div>
+										</div>		
 
 										<header>
 											<h3>Chaotic Analysis of Inverse Pendulum and visualisation of Fractals</h3>
@@ -217,35 +219,38 @@
 									</article>
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/windtunnel.jpeg" alt="" /></a>
-										
-																				<!-- The Modal -->	
-																				<div class="modal">
-																					<div class="modal-header">
-																					  <span class="close-btn">&times;</span>
-																					  <h1><b>Collaborative Autonomous Aerial Robots</b></h1>
-																					</div>
-																					<div class="modal-content" style="font-size:70%; text-align: left">
-																					  <p>
-																						  This is my undergrad capstone project. A quadrotor flight controller was designed from scratch on STM32 and ESP32. 
-																						  The second part of the project was to design pattern formation algorithm with obstacle avoidance. To aid in faster development, I designed tools such as swarm simulator and automatic PID tuner (based on dynamic model).
-																						  The simulator helped in implementing different algorithms without risking hardware damage and was incredibly useful during covid-19 lockdown.
-																					  
-																					  <ul> 
-										  
-																					  <li> Decide which electronic components to purchase based on temperature requirements while constraining to the budget.</li>
-																					  <li> Develop a system with feedback of thermocouple to control temperature (Algorithm used: PI control, Exponential Smoothing)</li>
-																					  <li> Develop the algorithm of how the machine has to be operated (manual/autonomous/safety features)</li>
-																					  <li> Design and fabricate the circuit board.</li>
-																					  </ul>
-																					  </p>
-																					</div>
-																					<div class="modal-footer">
-																					  <p>Watch on youtube <a href="https://www.youtube.com/watch?v=-IzKpLBw5eM">here</a></p>
-																					</div>
-																				  </div>		
-										
-										
-										
+
+										<!-- The Modal -->	
+										<div class="modal">
+											<div class="modal-header">
+												<span class="close-btn">&times;</span>
+												<h1><b>Designing and Manufacturing of a Benchtop Wind Tunnel</b></h1>
+											</div>
+											<div class="modal-content" style="font-size:70%; text-align: left">
+												<p>
+													In this project, we(team size - 5) designed and manufactured the windtunnel. The windtunnel was subsonic, each section was manufactured by hand(even the thermocouples) except the testing chamber with laser cutter. 
+													Then, dimmerstat, thermocouples and datalogging was added. The size of windtunnel was around 2.3 meters in length. It was manufactured in modules using plywood and acrylic. 
+													Additionally the contraction section (entry of air) is curved and designed using a 5th degree polynomial which minimise boundary layer thickness and has minimal contraction to save space.
+													It reduces the area of the contraction section smoothly so the forces on the supports is reduced. I worked in the following areas:
+
+												<ul> 
+	
+												<li> Design windtunnel using CREO and MATLAB and make production drawings.</li>
+												<li> Select Fan based on velocity required using fluid mechanics calculations.</li>
+												<li> Selected heater using an automated script to calculate surface temperature using radiation, convection and conduction.</li>
+												<li> Build mathematical model using circuit analysis of heat transfer to calculate the amount of heat transfer in individual modes.</li>
+												<li> Designed and fabricated electronics board for controlling speed of fan, collecting thermocouple data and using Opamps to amplify the readings.</li>
+
+												</ul>
+												</p>
+											</div>
+											<div class="modal-footer">
+												<p>Watch on youtube <a href="https://www.youtube.com/watch?v=-IzKpLBw5eM">here</a></p>
+											</div>
+											</div>		
+
+
+
 										<header>
 											<h3>Designing and Manufacturing of a Benchtop Wind Tunnel</h3>
 										</header>
@@ -254,33 +259,24 @@
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/francis.png" alt="" /></a>
 										
-																				<!-- The Modal -->	
-																				<div class="modal">
-																					<div class="modal-header">
-																					  <span class="close-btn">&times;</span>
-																					  <h1><b>Collaborative Autonomous Aerial Robots</b></h1>
-																					</div>
-																					<div class="modal-content" style="font-size:70%; text-align: left">
-																					  <p>
-																						  This is my undergrad capstone project. A quadrotor flight controller was designed from scratch on STM32 and ESP32. 
-																						  The second part of the project was to design pattern formation algorithm with obstacle avoidance. To aid in faster development, I designed tools such as swarm simulator and automatic PID tuner (based on dynamic model).
-																						  The simulator helped in implementing different algorithms without risking hardware damage and was incredibly useful during covid-19 lockdown.
-																					  
-																					  <ul> 
-										  
-																					  <li> Decide which electronic components to purchase based on temperature requirements while constraining to the budget.</li>
-																					  <li> Develop a system with feedback of thermocouple to control temperature (Algorithm used: PI control, Exponential Smoothing)</li>
-																					  <li> Develop the algorithm of how the machine has to be operated (manual/autonomous/safety features)</li>
-																					  <li> Design and fabricate the circuit board.</li>
-																					  </ul>
-																					  </p>
-																					</div>
-																					<div class="modal-footer">
-																					  <p>Watch on youtube <a href="https://www.youtube.com/watch?v=-IzKpLBw5eM">here</a></p>
-																					</div>
-																				  </div>		
-										
-										
+										<!-- The Modal -->	
+										<div class="modal">
+											<div class="modal-header">
+												<span class="close-btn">&times;</span>
+												<h1><b>Francis Turbine</b></h1>
+											</div>
+											<div class="modal-content" style="font-size:70%; text-align: left">
+												<p>
+													As a part of Fluid Machines course, we designed a protype of francis turbine. The turbine was designed to generate a power of 50 MW with a head of 100 m. Accordingly, the number of guide and runner vanes were calculated with appropirate angles. 
+													The design of vanes were done using NACA aerofoils adjusted to calculated angles and the miniature design was 3D printed. Unfortunately I couldn't find a picture of the 3D printed product :(  
+													</p>
+											</div>
+											<div class="modal-footer">
+												<p>Watch on youtube <a href="https://www.youtube.com/watch?v=-IzKpLBw5eM">here</a></p>
+											</div>
+											</div>		
+
+
 										
 										<header>
 											<h3>Designing and Manufacturing of Francis Turbine</h3>
@@ -290,32 +286,33 @@
 								<div class="col-4 col-12-mobile">
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/urbot.png" alt="" /></a>
-										
-																				<!-- The Modal -->	
-																				<div class="modal">
-																					<div class="modal-header">
-																					  <span class="close-btn">&times;</span>
-																					  <h1><b>Collaborative Autonomous Aerial Robots</b></h1>
-																					</div>
-																					<div class="modal-content" style="font-size:70%; text-align: left">
-																					  <p>
-																						  This is my undergrad capstone project. A quadrotor flight controller was designed from scratch on STM32 and ESP32. 
-																						  The second part of the project was to design pattern formation algorithm with obstacle avoidance. To aid in faster development, I designed tools such as swarm simulator and automatic PID tuner (based on dynamic model).
-																						  The simulator helped in implementing different algorithms without risking hardware damage and was incredibly useful during covid-19 lockdown.
-																					  
-																					  <ul> 
-										  
-																					  <li> Decide which electronic components to purchase based on temperature requirements while constraining to the budget.</li>
-																					  <li> Develop a system with feedback of thermocouple to control temperature (Algorithm used: PI control, Exponential Smoothing)</li>
-																					  <li> Develop the algorithm of how the machine has to be operated (manual/autonomous/safety features)</li>
-																					  <li> Design and fabricate the circuit board.</li>
-																					  </ul>
-																					  </p>
-																					</div>
-																					<div class="modal-footer">
-																					  <p>Watch on youtube <a href="https://www.youtube.com/watch?v=-IzKpLBw5eM">here</a></p>
-																					</div>
-																				  </div>		
+
+									<!-- The Modal -->	
+									<div class="modal">
+										<div class="modal-header">
+											<span class="close-btn">&times;</span>
+											<h1><b>Window Cleaning Robot</b></h1>
+										</div>
+										<div class="modal-content" style="font-size:70%; text-align: left">
+											<p>
+												As a part of mechatronics course, we designed the window cleaning robot. This was my first ever exposure to electronics and microcontrollers. 
+												The project required us to go in depth with finding the solution to real problems in city. With the rise of skyhigh buildings, we decided to make 
+												a window cleaning robot which cleans the outer surface of window. The robot was attached to window using a ducted fan, which creates a suction. Using 
+												standard toy tyres, our robot travelled on the window. Our algorithm was extremely elementary which followed straight path and then turned in other direction
+												when encountered any wall. The work done in project is as follows:
+											<ul> 
+
+											<li> Studying the problems and finding out the problem statement. </li>
+											<li> Figuring out the design and mechanism of the robot.</li>
+											<li> Deciding components based on air flow required to keep it on wall.</li>
+											<li> Make few prototypes, interfacing with motor drivers, ESCs and other sensors.</li>
+											</ul>
+											Outcome: Suction to wall was successful, although it couldn't travel because of toy wheels and low torque motors. Moreover, the COG was not low enough, so it had tendency to fall.	</p>
+										</div>
+										<div class="modal-footer">
+											<p>Watch on youtube <a href="https://www.youtube.com/watch?v=-IzKpLBw5eM">here</a></p>
+										</div>
+										</div>		
 										
 										
 										<header>
@@ -325,32 +322,40 @@
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/quadsim.png" alt="" /></a>
 										
-																				<!-- The Modal -->	
-																				<div class="modal">
-																					<div class="modal-header">
-																					  <span class="close-btn">&times;</span>
-																					  <h1><b>Collaborative Autonomous Aerial Robots</b></h1>
-																					</div>
-																					<div class="modal-content" style="font-size:70%; text-align: left">
-																					  <p>
-																						  This is my undergrad capstone project. A quadrotor flight controller was designed from scratch on STM32 and ESP32. 
-																						  The second part of the project was to design pattern formation algorithm with obstacle avoidance. To aid in faster development, I designed tools such as swarm simulator and automatic PID tuner (based on dynamic model).
-																						  The simulator helped in implementing different algorithms without risking hardware damage and was incredibly useful during covid-19 lockdown.
-																					  
-																					  <ul> 
-										  
-																					  <li> Decide which electronic components to purchase based on temperature requirements while constraining to the budget.</li>
-																					  <li> Develop a system with feedback of thermocouple to control temperature (Algorithm used: PI control, Exponential Smoothing)</li>
-																					  <li> Develop the algorithm of how the machine has to be operated (manual/autonomous/safety features)</li>
-																					  <li> Design and fabricate the circuit board.</li>
-																					  </ul>
-																					  </p>
-																					</div>
-																					<div class="modal-footer">
-																					  <p>Watch on youtube <a href="https://www.youtube.com/watch?v=-IzKpLBw5eM">here</a></p>
-																					</div>
-																				  </div>		
-										
+															<!-- The Modal -->	
+															<div class="modal">
+																<div class="modal-header">
+																	<span class="close-btn">&times;</span>
+																	<h1><b>Robotics Swarm Simulator</b></h1>
+																</div>
+																<div class="modal-content" style="font-size:70%; text-align: left">
+																	<p>
+																		This is one of my best personal projects. In Summer 2020, I was learning mobile robotics and wanted to implement the algorithms. 
+																		However, I couldn't use ROS in my virtual machine due to resource consumption. Hence, I decided to make my own simulator. What started as a simple 2D point based animation
+																		became a full 3D simulator with swarm capabilities. The reason I like my simulator is because it is lightweight and I can modify it as per my requirements.
+																		The simulator has the following capabilities as of now (June 2021):
+
+																	
+																	<ul> 
+						
+																	<li> Completely built using standard python libraries.</li>
+																	<li> Robots: Differential Drives and Quadrotors</li>
+																	<li> Both linear and non-linear dynamic models</li>
+																	<li> Inbuilt path tracer, blackbox and auto pid tuner.</li>
+																	<li> Swarm algorithms for patten formation using graph theory (Formation and Agreement protocols) </li>
+																	<li> Inbuilt controller as a sample to play with keyboard. </li>
+																	<li> Language: Python</li>
+																	</ul>
+																	Note:- I will have to say, this simulator is no way as sophesticated as ROS. It is just intended as a learning or demonstration platform for low resource computers. 
+																	Its not public currently, I will work on documentation and make it little more usable before making it available.  
+																	
+																	</p>
+																</div>
+																<div class="modal-footer">
+																	<p>Watch on youtube <a href="https://www.youtube.com/watch?v=-IzKpLBw5eM">here</a></p>
+																</div>
+																</div>		
+					
 										
 										<header>
 											<h3>Robotics Swarm Simulator</h3>
@@ -358,34 +363,33 @@
 									</article>
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/domlab.png" alt="" /></a>
-										
-																				<!-- The Modal -->	
-																				<div class="modal">
-																					<div class="modal-header">
-																					  <span class="close-btn">&times;</span>
-																					  <h1><b>Collaborative Autonomous Aerial Robots</b></h1>
-																					</div>
-																					<div class="modal-content" style="font-size:70%; text-align: left">
-																					  <p>
-																						  This is my undergrad capstone project. A quadrotor flight controller was designed from scratch on STM32 and ESP32. 
-																						  The second part of the project was to design pattern formation algorithm with obstacle avoidance. To aid in faster development, I designed tools such as swarm simulator and automatic PID tuner (based on dynamic model).
-																						  The simulator helped in implementing different algorithms without risking hardware damage and was incredibly useful during covid-19 lockdown.
-																					  
-																					  <ul> 
-										  
-																					  <li> Decide which electronic components to purchase based on temperature requirements while constraining to the budget.</li>
-																					  <li> Develop a system with feedback of thermocouple to control temperature (Algorithm used: PI control, Exponential Smoothing)</li>
-																					  <li> Develop the algorithm of how the machine has to be operated (manual/autonomous/safety features)</li>
-																					  <li> Design and fabricate the circuit board.</li>
-																					  </ul>
-																					  </p>
-																					</div>
-																					<div class="modal-footer">
-																					  <p>Watch on youtube <a href="https://www.youtube.com/watch?v=-IzKpLBw5eM">here</a></p>
-																					</div>
-																				  </div>		
-										
-										
+
+									<!-- The Modal -->	
+									<div class="modal">
+										<div class="modal-header">
+											<span class="close-btn">&times;</span>
+											<h1><b>Simulation of Kinematic Linkages</b></h1>
+										</div>
+										<div class="modal-content" style="font-size:70%; text-align: left">
+											<p>
+												This project is closely related to my robotics simulator(Python) and my SCARA simulator(MATLAB). The project was to generate the plot of angles vs time for kinematic chains.  
+												The language required was strictly scilab, which was unknown to me at that time. At first glance, it is just figuring out the kinematic equations and solving for answers at each step.
+												But I decided to add animations in the code. The following linkages were simulated:
+											<ul> 
+											<li> 4-bar crank rocker linkage</li>
+											<li> Inline slider-crank linkage</li>
+											<li> Offset slider-crank linkage</li>
+											<li> Velocity Analysis of RSSR (R - revolute; S - spherical) linkage</li>
+											<li> Acceleration Analysis of Sliding Contact Linkage</li>
+											</ul> 
+											</p>
+										</div>
+										<div class="modal-footer">
+											<p>Watch on youtube <a href="https://www.youtube.com/watch?v=-IzKpLBw5eM">here</a></p>
+										</div>
+										</div>		
+
+
 										<header>
 											<h3>Simulation of Kinematic Linkages</h3>
 										</header>
@@ -453,7 +457,7 @@
 							<li>Google AI Explore ML - Workshop</li>
 							<li>MATLAB Onramp, Simulink Onramp, MATLAB Fundamentals </li>	
 							<li>Completed Workshop Certification Course at Fabrication Shop, Ahmedabad University </li>
-							
+							<li> iirs</li>
 						
 						<p><b style="font-weight: 900">Extras:</b></p>
 						<ul> <li> Featured author on WikiHow with 3 million views</li> 
