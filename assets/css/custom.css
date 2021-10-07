@@ -72,3 +72,22 @@
   to {top:0; opacity:1}
 }
 
+.quote {
+  max-width: 600px;
+  padding: 25px;
+  margin: 10px 30px;  
+  box-size: border-box;
+}
+
+.quote-content{
+  font-family: 'Gelasio', serif;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.quote-credit{
+  font-weight:bold;
+  font-style: normal;
+  text-align:right;
+  
+}
