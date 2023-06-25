@@ -128,6 +128,7 @@ window.onload = function() {
          <tbody>
             <tr style="padding:0px">
                <td style="padding:0px">
+                <section>
                   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                      <tbody>
                         <tr style="padding:0px">
@@ -156,6 +157,8 @@ window.onload = function() {
                         </tr>
                      </tbody>
                   </table>
+                </section>
+                <section>
                   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                      <tbody>
                         <tr>
@@ -301,9 +304,12 @@ Achieved successful autonomous navigation with obstacle avoidance in high-speed 
                       
 
                  </table>
+                </section>
 
 
 
+
+                <section>
 
                   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                     <tbody>
@@ -319,6 +325,246 @@ Achieved successful autonomous navigation with obstacle avoidance in high-speed 
                  </table>
                   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                      <tbody>
+                        <!------- sim ------->
+                        <tr onmouseout="sim_stop()" onmouseover="sim_start()">
+                          <td style="padding:20px;width:25%;vertical-align:middle">
+                             <div class="one">
+                                <div class="two" id='sim_image'>
+                                   <video  width=100% height=100% muted autoplay loop>
+                                      <source src="images/sim.gif" type="video/gif">
+                                      Your browser does not support the video tag.
+                                   </video>
+                                </div>
+                                <img src='images/sim.png' width="160">
+                             </div>
+                             <script type="text/javascript">
+                                function sim_start() {
+                                  document.getElementById('sim_image').style.opacity = "1";
+                                }
+                                
+                                function sim_stop() {
+                                  document.getElementById('sim_image').style.opacity = "0";
+                                }
+                                sim_stop()
+                             </script>
+                          </td>
+                          <td style="padding:20px;width:75%;vertical-align:middle">
+                             <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda">
+                                <papertitle>Robotics Simulator</papertitle>
+                             </a>
+                             <br>
+                             <em>State of the art</em>, 2020
+                             <br>
+                             <a href="https://drive.google.com/file/d/1BD4-1cNd4hT-va_fJifCjNum4yOoAopc/view?usp=sharing">Report</a>
+                             /
+                             <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a>
+                             <p></p>
+                             <p>
+                                yo
+                             </p>
+                          </td>
+                       </tr>
+                                               <!------- acrobot ------->
+                                               <tr onmouseout="acrobot_stop()" onmouseover="acrobot_start()">
+                                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                                   <div class="one">
+                                                      <div class="two" id='acrobot_image'>
+                                                         <video  width=100% height=100% muted autoplay loop>
+                                                            <source src="images/acrobot.gif" type="video/gif">
+                                                            Your browser does not support the video tag.
+                                                         </video>
+                                                      </div>
+                                                      <img src='images/acrobot.png' width="160">
+                                                   </div>
+                                                   <script type="text/javascript">
+                                                      function acrobot_start() {
+                                                        document.getElementById('acrobot_image').style.opacity = "1";
+                                                      }
+                                                      
+                                                      function acrobot_stop() {
+                                                        document.getElementById('acrobot_image').style.opacity = "0";
+                                                      }
+                                                      acrobot_stop()
+                                                   </script>
+                                                </td>
+                                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                                   <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda">
+                                                      <papertitle>Acrobot Swing Up</papertitle>
+                                                   </a>
+                                                   <br>
+                                                   <em>Lidar and odometry based SLAM on acrobot Humanoid Robot</em>, 2023
+                                                   <br>
+                                                   <a href="https://drive.google.com/file/d/1BD4-1cNd4hT-va_fJifCjNum4yOoAopc/view?usp=sharing">Report</a>
+                                                   /
+                                                   <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a>
+                                                   <p></p>
+                                                   <p>
+                                                      yo
+                                                   </p>
+                                                </td>
+                                             </tr>
+
+                        <!------- mothra ------->
+                        <tr onmouseout="mothra_stop()" onmouseover="mothra_start()">
+                          <td style="padding:20px;width:25%;vertical-align:middle">
+                             <div class="one">
+                                <div class="two" id='mothra_image'>
+                                   <video  width=100% height=100% muted autoplay loop>
+                                      <source src="images/mothra.gif" type="video/gif">
+                                      Your browser does not support the video tag.
+                                   </video>
+                                </div>
+                                <img src='images/mothra.png' width="160">
+                             </div>
+                             <script type="text/javascript">
+                                function mothra_start() {
+                                  document.getElementById('mothra_image').style.opacity = "1";
+                                }
+                                
+                                function mothra_stop() {
+                                  document.getElementById('mothra_image').style.opacity = "0";
+                                }
+                                mothra_stop()
+                             </script>
+                          </td>
+                          <td style="padding:20px;width:75%;vertical-align:middle">
+                             <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda">
+                                <papertitle>Full Stack Drone Controller from Scratch</papertitle>
+                             </a>
+                             <br>
+                             <em>Comparison Paper</em>, 2023
+                             <br>
+                             <a href="https://drive.google.com/file/d/1BD4-1cNd4hT-va_fJifCjNum4yOoAopc/view?usp=sharing">Report</a>
+                             /
+                             <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a>
+                             <p></p>
+                             <p>
+                                yo
+                             </p>
+                          </td>
+                       </tr>
+
+                        <!------- 3drecon ------->
+                        <tr onmouseout="recon_stop()" onmouseover="recon_start()">
+                          <td style="padding:20px;width:25%;vertical-align:middle">
+                             <div class="one">
+                                <div class="two" id='3drecon_image'>
+                                   <video  width=100% height=100% muted autoplay loop>
+                                      <source src="images/3drecon.gif" type="video/gif">
+                                      Your browser does not support the video tag.
+                                   </video>
+                                </div>
+                                <img src='images/3drecon.png' width="160">
+                             </div>
+                             <script type="text/javascript">
+                                function recon_start() {
+                                  document.getElementById('3drecon_image').style.opacity = "1";
+                                }
+                                
+                                function recon_stop() {
+                                  document.getElementById('3drecon_image').style.opacity = "0";
+                                }
+                                recon_stop()
+                             </script>
+                          </td>
+                          <td style="padding:20px;width:75%;vertical-align:middle">
+                             <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda">
+                                <papertitle>3D Reconstruction using Multi View Stereo</papertitle>
+                             </a>
+                             <br>
+                             <em>Multi View Geometry</em>, 2023
+                             <br>
+                             <a href="https://drive.google.com/file/d/1BD4-1cNd4hT-va_fJifCjNum4yOoAopc/view?usp=sharing">Report</a>
+                             /
+                             <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a>
+                             <p></p>
+                             <p>
+                                yo
+                             </p>
+                          </td>
+                       </tr>
+
+                        <!------- pnp ------->
+                        <tr onmouseout="pnp_stop()" onmouseover="pnp_start()">
+                          <td style="padding:20px;width:25%;vertical-align:middle">
+                             <div class="one">
+                                <div class="two" id='pnp_image'>
+                                   <video  width=100% height=100% muted autoplay loop>
+                                      <source src="images/pnp.gif" type="video/gif">
+                                      Your browser does not support the video tag.
+                                   </video>
+                                </div>
+                                <img src='images/pnp.png' width="160">
+                             </div>
+                             <script type="text/javascript">
+                                function pnp_start() {
+                                  document.getElementById('pnp_image').style.opacity = "1";
+                                }
+                                
+                                function pnp_stop() {
+                                  document.getElementById('pnp_image').style.opacity = "0";
+                                }
+                                pnp_stop()
+                             </script>
+                          </td>
+                          <td style="padding:20px;width:75%;vertical-align:middle">
+                             <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda">
+                                <papertitle>Camera Pose Estimation using PnP and P3P</papertitle>
+                             </a>
+                             <br>
+                             <em>Lidar and odometry based SLAM on pnp Humanoid Robot</em>, 2023
+                             <br>
+                             <a href="https://drive.google.com/file/d/1BD4-1cNd4hT-va_fJifCjNum4yOoAopc/view?usp=sharing">Report</a>
+                             /
+                             <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a>
+                             <p></p>
+                             <p>
+                                yo
+                             </p>
+                          </td>
+                       </tr>
+
+                        <!------- m620 ------->
+                        <tr onmouseout="m620_stop()" onmouseover="m620_start()">
+                          <td style="padding:20px;width:25%;vertical-align:middle">
+                             <div class="one">
+                                <div class="two" id='m620_image'>
+                                   <video  width=100% height=100% muted autoplay loop>
+                                      <source src="images/m620.gif" type="video/gif">
+                                      Your browser does not support the video tag.
+                                   </video>
+                                </div>
+                                <img src='images/m620.png' width="160">
+                             </div>
+                             <script type="text/javascript">
+                                function m620_start() {
+                                  document.getElementById('m620_image').style.opacity = "1";
+                                }
+                                
+                                function m620_stop() {
+                                  document.getElementById('m620_image').style.opacity = "0";
+                                }
+                                m620_stop()
+                             </script>
+                          </td>
+                          <td style="padding:20px;width:75%;vertical-align:middle">
+                             <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda">
+                                <papertitle>Full Stack Autonomous Quadrotor using Visual Inertial Odometry</papertitle>
+                             </a>
+                             <br>
+                             <em>Lidar and odometry based SLAM on m620 Humanoid Robot</em>, 2023
+                             <br>
+                             <a href="https://drive.google.com/file/d/1BD4-1cNd4hT-va_fJifCjNum4yOoAopc/view?usp=sharing">Report</a>
+                             /
+                             <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a>
+                             <p></p>
+                             <p>
+                                yo
+                             </p>
+                          </td>
+                       </tr>
+
+                      
                         <!------- UKF ------->
                         <tr onmouseout="ukf_stop()" onmouseover="ukf_start()">
                            <td style="padding:20px;width:25%;vertical-align:middle">
@@ -383,7 +629,7 @@ Achieved successful autonomous navigation with obstacle avoidance in high-speed 
                            </td>
                            <td style="padding:20px;width:75%;vertical-align:middle">
                               <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda">
-                                 <papertitle>Particle Filter Based SLAM</papertitle>
+                                 <papertitle>Unscented Kalman Filter</papertitle>
                               </a>
                               <br>
                               <em>Lidar and odometry based SLAM on THOR Humanoid Robot</em>, 2023
@@ -439,6 +685,8 @@ Achieved successful autonomous navigation with obstacle avoidance in high-speed 
                         </tr>
                      </tbody>
                   </table>
+                </section>
+                <section>
 
 
                   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -540,6 +788,7 @@ Achieved successful autonomous navigation with obstacle avoidance in high-speed 
                     </tr>
                  </tbody>
                 </table>
+              </section>
 
 
                   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -557,6 +806,8 @@ Achieved successful autonomous navigation with obstacle avoidance in high-speed 
                </td>
             </tr>
       </table>
+
+
    </body>
 
 </html>
