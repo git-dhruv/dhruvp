@@ -22,7 +22,6 @@ var canvasDots = function() {
     canvas.height = screen.height;
     
     canvas.style.display = 'block';
-    console.log(screen.height)
     ctx.fillStyle = colorDot;
     ctx.lineWidth = .1;
     ctx.strokeStyle = color;
@@ -33,9 +32,9 @@ var canvasDots = function() {
     };
 
     var dots = {
-        nb: 1000,
+        nb: Math.round(700*canvas.width/1600),
         distance: 60,
-        d_radius: 200,
+        d_radius: 100,
         array: []
     };
 
