@@ -374,7 +374,7 @@
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda">
-                      <papertitle>Full Stack Autonomous Quadrotor using Visual Inertial Odometry</papertitle>
+                      <papertitle>Fast Trajectory tracking and control of Quadrotor</papertitle>
                     </a>
                     <br/>
 
@@ -384,7 +384,18 @@
                     <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a>
                     <p></p>
                     <p>
-                      Vision based state estimation and Non Linear Geometric Control
+                      The project aimed to achieve autonomous flight of a quadrotor in an obstacle map, given start and end coordinates. 
+                      <br/>
+                      • State estimation was performed using Stereo Visual Inertial Odometry with fusion using an Error State Kalman Filter. 
+                      <br/>
+                      • Path planning was implemented using A*, followed by generating a min snap trajectory through Ramer-Douglas-Peucker downsampling. To achieve rapid tracking, a cascaded non-linear geometric controller was implemented for the quadrotor. 
+                      <br/>
+                      • My algorithm achieved top 5 position in leaderboard in the class of size 100 based on speed, accuracy and robustness. 
+
+
+
+
+
                     </p>
                   </td>
                 </tr>
@@ -426,7 +437,9 @@
                     <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a>
                     <p></p>
                     <p>
-                      yo
+                      • Implemented a Quaternion based Unscented Kalman Filter(UKF) to track 3D orientation from Gyroscope and Accelerometer data
+                      <br/>
+                      • Employed an optimization-based approach to process sigma points and estimate the state of the quaternion
                     </p>
                   </td>
                 </tr>
@@ -466,7 +479,8 @@
                     <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a>
                     <p></p>
                     <p>
-                      yo
+                      • Integrated the inertial orientation and odometry with a 2D LIDAR scan to build the occupancy grid map of the environment while
+localising the robot using a particle filter
                     </p>
                   </td>
                 </tr>
@@ -506,7 +520,7 @@
                     <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a>
                     <p></p>
                     <p>
-                      yo
+                      • Implementation of two-view stereo and multi-view stereo algorithms for dense 3d reconstruction of a scene.
                     </p>
                   </td>
                 </tr>
@@ -547,7 +561,8 @@
                     <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a>
                     <p></p>
                     <p>
-                      yo
+                      • Estimated Camera Pose using PnP/P3P correspondence algorithm (without OpenCV). Backprojected the render mesh object to obtain an AR effect. 
+                      <br />• Resolved Pose ambiguity problem by using depth as a criteria.
                     </p>
                   </td>
                 </tr>
@@ -589,8 +604,9 @@
                     <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a>
                     <p></p>
                     <p>
-                      Detected April tag pose using ROS wrapper and then used an least square optimization approach to
-                      refine the estimate. A bezier curve strategy was used to plan a path and then a velocity based PD
+                      •  Detected April tag pose using ROS wrapper and then used an least square optimization approach to
+                      refine the estimate. 
+                      <br/> • A bezier curve strategy was used to plan a path and then a velocity based PD
                       controller was used to move the end effector.
                     </p>
                   </td>
@@ -624,15 +640,16 @@
                       <papertitle>Full Stack Drone Controller from Scratch</papertitle>
                     </a>
                     <br>
-                    <em>Comparison Paper</em>, 2023
+                    <em>Make an autonomous controller from scratch using the cheapest sensors available from Market. </em>
                     <br>
-                    <a
-                      href="https://drive.google.com/file/d/1BD4-1cNd4hT-va_fJifCjNum4yOoAopc/view?usp=sharing">Report</a>
-                    /
-                    <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a>
+                    <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Paper</a>
                     <p></p>
                     <p>
-                      yo
+                      • Developed a 12 state Kalman Filter that fuses MPU6050, BMP180 and Magnetometer, Neo6M GPS to get a reliable state estimate.
+                      <br />
+                      • Developed a gain scheduling based control strategy using adaptive gains based on state estimate. 
+                      <br />
+                      • Used ESP32 as a flight controller, implemented RTOS to run State Estimator and Controller in different cores. 
                     </p>
                   </td>
                 </tr>
@@ -665,15 +682,14 @@
                       <papertitle>Robotics Simulator</papertitle>
                     </a>
                     <br>
-                    <em>State of the art</em>, 2020
+                    <em>Lightweight Simulator completely using Python standard library</em>, 2020
                     <br>
-                    <a
-                      href="https://drive.google.com/file/d/1BD4-1cNd4hT-va_fJifCjNum4yOoAopc/view?usp=sharing">Report</a>
-                    /
-                    <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a>
-                    <p></p>
                     <p>
-                      yo
+                      • Developed a physics based graphical Simulator for differential drives and quadrotors from scratch in python. 
+                        <br />
+                        • Implemented Swarm algorithms for pattern formation using graph theory.
+                        <br />
+                        • Inbuilt path tracer, data logger and auto pid tuner.
                     </p>
                   </td>
                 </tr>
