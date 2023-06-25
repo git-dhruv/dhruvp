@@ -151,7 +151,7 @@ canvas {
   transition: transform .2s;
 }
 .part:hover{  
-  transform:scale(1.2);
+  transform:scale(1.4);
   /* background-color: rgb(241, 241, 249); */
   /* background-image: linear-gradient(to bottom,white, rgb(245, 245, 220), white); */
   background: linear-gradient(to bottom, white, rgb(245, 245, 220), white), radial-gradient(circle, white, rgb(245, 245, 220), white);

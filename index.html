@@ -7,8 +7,11 @@
   <meta name="author" content="Dhruv Parikh">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <!-- <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>"> -->
+    
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Masala_Chai.JPG/1200px-Masala_Chai.JPG">
+
 </head>
 
 <body>
@@ -128,7 +131,7 @@
   <canvas class='connecting-dots'></canvas>
 
   <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    style="width:100%;max-width:min(800px, 100vw);border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -191,7 +194,7 @@
                     <div class="one">
                       <div class="two" id='jpl_image'>
                         <video width=100% height=100% muted autoplay loop>
-                          <source src="images/jpl.gif" type="video/gif">
+                          <source src="images/jpl.gif" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                       </div>
@@ -256,11 +259,11 @@
                     </script>
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda">
+                    <a href="https://www.kumarrobotics.org/">
                       <papertitle>Vijay Kumar Lab</papertitle>
                     </a>
                     <br>
-                    <em>Research Assistant</em>, 2022-2023
+                    <em><a href="https://www.kumarrobotics.org/people/dhruv-parikh/">Research Assistant</a></em>, 2022-2023
                     <br>
                     <!-- <a href="https://drive.google.com/file/d/1BD4-1cNd4hT-va_fJifCjNum4yOoAopc/view?usp=sharing">Report</a>
                            /
@@ -284,7 +287,7 @@
                   <div class="one">
                     <div class="two" id='GAero_image'>
                       <video width=100% height=100% muted autoplay loop>
-                        <source src="images/GAero.gif" type="video/gif">
+                        <source src="images/GAero.gif" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     </div>
@@ -304,7 +307,7 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda">
+                  <a href="https://generalaeronautics.com/">
                     <papertitle>General Aeronautics</papertitle>
                   </a>
                   <br>
@@ -351,15 +354,15 @@
               <tbody>
                 <!------- m620 ------->
                 <tr onmouseout="m620_stop()" onmouseover="m620_start()" class="part">
-                  <td style="padding:20px;width:25%;vertical-align:middle">
+                  <td style="padding:1px;width:25%;vertical-align:middle">
                     <div class="one">
                       <div class="two" id='m620_image'>
                         <video width=100% height=100% muted autoplay loop>
-                          <source src="images/m620.gif" type="video/gif">
+                          <source src="images/m620.mp4" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                       </div>
-                      <img src='images/m620.png' width="160">
+                      <img src='images/m620.gif' width="160">
                     </div>
                     <script type="text/javascript">
                       function m620_start() {
@@ -369,19 +372,19 @@
                       function m620_stop() {
                         document.getElementById('m620_image').style.opacity = "0";
                       }
-                      m620_stop()
+                      // m620_stop()
                     </script>
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda">
+                    
                       <papertitle>Fast Trajectory tracking and control of Quadrotor</papertitle>
-                    </a>
+                    
                     <br />
 
                     <a
-                      href="https://drive.google.com/file/d/1BD4-1cNd4hT-va_fJifCjNum4yOoAopc/view?usp=sharing">Report</a>
+                      href="https://drive.google.com/file/d/1FltJJ02vh44SVAvjPdP4ue27W6MWzvb-/view?usp=sharing">Report</a>
                     /
-                    <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a>
+                    <!-- <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a> -->
                     <p></p>
                     <p>
                       The project aimed to achieve autonomous flight of a quadrotor in an obstacle map, given start and
@@ -414,7 +417,7 @@
                     <div class="one">
                       <div class="two" id='ukf_image'>
                         <video width=100% height=100% muted autoplay loop>
-                          <source src="images/ukf.gif" type="video/gif">
+                          <source src="images/ukf.gif" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                       </div>
@@ -456,7 +459,7 @@
                     <div class="one">
                       <div class="two" id='thor_image'>
                         <video width=100% height=100% muted autoplay loop>
-                          <source src="images/thor.gif" type="video/gif">
+                          <source src="images/thor.gif" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                       </div>
@@ -498,7 +501,7 @@
                     <div class="one">
                       <div class="two" id='3drecon_image'>
                         <video width=100% height=100% muted autoplay loop>
-                          <source src="images/3drecon.gif" type="video/gif">
+                          <source src="images/3drecon.gif" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                       </div>
@@ -540,7 +543,7 @@
                     <div class="one">
                       <div class="two" id='pnp_image'>
                         <video width=100% height=100% muted autoplay loop>
-                          <source src="images/pnp.gif" type="video/gif">
+                          <source src="images/pnp.gif" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                       </div>
@@ -580,7 +583,7 @@
                 <!------ MEAM520 -------->
                 <!-- Could had used the same JS function here? -->
                 <tr onmouseout="m520_stop()" onmouseover="m520_start()" class="part">
-                  <td style="padding:20px;width:25%;vertical-align:middle">
+                  <td style="padding:1px;width:25%;vertical-align:middle">
                     <div class="one">
                       <div class="two" id='m520_image'>
                         <video width=100% height=100% muted autoplay loop>
@@ -628,7 +631,7 @@
                     <div class="one">
                       <div class="two" id='mothra_image'>
                         <video width=100% height=100% muted autoplay loop>
-                          <source src="images/mothra.gif" type="video/gif">
+                          <source src="images/mothra.gif" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                       </div>
@@ -674,7 +677,7 @@
                     <div class="one">
                       <div class="two" id='sim_image'>
                         <video width=100% height=100% muted autoplay loop>
-                          <source src="images/sim.gif" type="video/gif">
+                          <source src="images/sim.gif" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                       </div>
@@ -714,7 +717,7 @@
                     <div class="one">
                       <div class="two" id='acrobot_image'>
                         <video width=100% height=100% muted autoplay loop>
-                          <source src="images/acrobot.gif" type="video/gif">
+                          <source src="images/acrobot.gif" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                       </div>
@@ -777,7 +780,7 @@
                     <div class="one">
                       <div class="two" id='jpl_image'>
                         <video width=100% height=100% muted autoplay loop>
-                          <source src="images/jpl.gif" type="video/gif">
+                          <source src="images/jpl.gif" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                       </div>
