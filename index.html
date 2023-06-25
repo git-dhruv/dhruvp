@@ -19,8 +19,8 @@
     var canvasDots = function () {
       var canvas = document.querySelector('canvas'),
         ctx = canvas.getContext('2d'),
-        colorDot = '#CECECE',
-        color = '#CECECE';
+        colorDot = '#cecece',
+        color = '#8b8b8b';
       canvas.width = screen.width;
       canvas.height = screen.height;
 
@@ -35,7 +35,7 @@
       };
 
       var dots = {
-        nb: Math.round(700 * canvas.width / 1600),
+        nb: Math.round(1000 * canvas.width / 1600),
         distance: 60,
         d_radius: 100,
         array: []
