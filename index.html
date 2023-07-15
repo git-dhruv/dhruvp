@@ -358,6 +358,57 @@
             <table
               style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
+                <!------- bundleadjustment ------->
+                <tr onmouseout="bundleadjustment_stop()" onmouseover="bundleadjustment_start()" class="part">
+                  <td style="padding:1px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='bundleadjustment_image'>
+                        <video width=100% height=100% muted autoplay loop>
+                          <source src="images/bundleadjustment.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                      <img src='images/bundleadjustment.gif' width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function bundleadjustment_start() {
+                        document.getElementById('bundleadjustment_image').style.opacity = "1";
+                      }
+
+                      function bundleadjustment_stop() {
+                        document.getElementById('bundleadjustment_image').style.opacity = "0";
+                      }
+                      bundleadjustment_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+
+                    <papertitle>Non Linear Bundle Adjustment</papertitle>
+
+                    <br />
+
+                    <a
+                      href="https://drive.google.com/file/d/1FltJJ02vh44SVAvjPdP4ue27W6MWzvb-/view?usp=sharing">Report</a>
+
+                    <!-- <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a> -->
+                    <p></p>
+                    <p>
+                      
+                      • Applied Non Linear Bundle Adjustment using Horn Schunk Trick on the BAL dataset.
+                      <br />
+                      • Used Ceres and g2o for solving the problem.
+                    </p>
+                  </td>
+                </tr>
+
+
+
+
+
+
+
+
+
                 <!------- m620 ------->
                 <tr onmouseout="m620_stop()" onmouseover="m620_start()" class="part">
                   <td style="padding:1px;width:25%;vertical-align:middle">
