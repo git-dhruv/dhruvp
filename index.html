@@ -358,6 +358,48 @@
             <table
               style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
+                <!-- oscbiped -->
+                <tr onmouseout="oscbiped_stop()" onmouseover="oscbiped_start()" class="part">
+                  <td style="padding:1px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='oscbiped_image'>
+                        <img src='images/osc.gif' width="160">
+
+                      </div>
+                      <img src='images/osc.gif' width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function oscbiped_start() {
+                        document.getElementById('oscbiped_image').style.opacity = "1";
+                      }
+
+                      function oscbiped_stop() {
+                        document.getElementById('oscbiped_image').style.opacity = "0";
+                      }
+                      oscbiped_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+
+                    <papertitle>Operational Space Controller on Biped</papertitle>
+
+                    <br />
+
+                    <a href="https://github.com/git-dhruv/">Code [Not open sourced yet]</a>
+
+                    <p></p>
+                    <p>
+
+                      •Developed and implemented an Operational Space Controller (OSC) for a 5-linked planar biped robot, formulating the problem as an instantaneous quadratic program (QP) to optimize actuator inputs and achieve precise tracking of the center of mass, torso angle, and swing foot position for stable walking.                      
+                      <br />
+                      • Leveraged the pydrake interface to construct the QP, with friction constraints, input limits, dynamic and contact constraints for robust biped locomotion.
+                      <br />
+                      • Implemented velocity and torso tracking objectives as quadratic cost, resulting in locomotion upto 0.7 m/s within actuator limits. 
+                    </p>
+                  </td>
+                </tr>
+
+
                 <!-- Segformer -->
                 <tr onmouseout="segformer_stop()" onmouseover="segformer_start()" class="part">
                   <td style="padding:1px;width:25%;vertical-align:middle">
