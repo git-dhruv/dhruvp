@@ -358,12 +358,61 @@
             <table
               style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
+                <!-- Segformer -->
+                <tr onmouseout="segformer_stop()" onmouseover="segformer_start()" class="part">
+                  <td style="padding:1px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='segformer_image'>
+                        <img src='images/segformer.gif' width="160">
+
+                        <!-- <video width=100% height=100% muted autoplay loop>
+          <source src="images/segformer.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video> -->
+                      </div>
+                      <img src='images/segformer.png' width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function segformer_start() {
+                        document.getElementById('segformer_image').style.opacity = "1";
+                      }
+
+                      function segformer_stop() {
+                        document.getElementById('segformer_image').style.opacity = "0";
+                      }
+                      segformer_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+
+                    <papertitle>Semantic Segmentation using Segformer</papertitle>
+
+                    <br />
+
+                    <a href="https://github.com/git-dhruv/Segformer/">Code</a>
+
+                    <p></p>
+                    <p>
+
+                      • Implemented Segformer's B0 architecture from scratch which mainly comprises of Attention Module,
+                      MixFFN layer and a MLP decoder.
+                      <br />
+                      • Trained on ADE20K dataset with weighted cross entropy loss to counter class imbalance and
+                      learning rate scheduler to speed up training.
+                      <br />
+                      • Achieved 0.45 mean IOU which is greater than 0.38 reported from official implementation.
+                      Implemented the same on CityScape dataset on a single sequence of 600 images.
+                    </p>
+                  </td>
+                </tr>
+
+
                 <!-- 3D Kalman -->
                 <tr onmouseout="dkalman_stop()" onmouseover="dkalman_start()" class="part">
                   <td style="padding:1px;width:25%;vertical-align:middle">
                     <div class="one">
                       <div class="two" id='3dkalman_image'>
-                      <img src='images/3dkalman.gif' width="160">
+                        <img src='images/3dkalman.gif' width="160">
 
                         <!-- <video width=100% height=100% muted autoplay loop>
                           <source src="images/3dkalman.mp4" type="video/mp4">
@@ -385,22 +434,24 @@
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
 
-                    <papertitle>Depth estimation using Kalman Filter</papertitle>
+                    <papertitle>Depth estimation using Bayesian Update</papertitle>
 
                     <br />
 
-                    <a
-                      href="https://github.com/git-dhruv/mono-depth-reconstruction">Code</a>
+                    <a href="https://github.com/git-dhruv/mono-depth-reconstruction">Code</a>
 
                     <!-- <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a> -->
                     <p></p>
                     <p>
-                      
-                      • Depth estimation using Monocular Vision, by fusing information from multiple images of the scene at different angles.
+
+                      • Depth estimation using Monocular Vision, by fusing information from multiple images of the scene
+                      at different angles.
                       <br />
-                      • Utilized Pose-derived baselines to establish epipolar lines and performed NCC-based block matching for correspondence identification.
+                      • Utilized Pose-derived baselines to establish epipolar lines and performed NCC-based block
+                      matching for correspondence identification.
                       <br />
-                      • Calculated depth using baselines, followed by integration into the Kalman Equation, resulting in enhanced depth fusion from multiple angled images.
+                      • Calculated depth using baselines, followed by integration into the Kalman Equation (only
+                      measurement update), resulting in enhanced depth fusion from multiple angled images.
                     </p>
                   </td>
                 </tr>
@@ -410,7 +461,7 @@
                   <td style="padding:1px;width:25%;vertical-align:middle">
                     <div class="one">
                       <div class="two" id='bundleadjustment_image'>
-                      <img src='images/bundleadjustment.png' width="160">
+                        <img src='images/bundleadjustment.png' width="160">
 
                         <!-- <video width=100% height=100% muted autoplay loop>
                           <source src="images/bundleadjustment.mp4" type="video/mp4">
@@ -436,13 +487,12 @@
 
                     <br />
 
-                    <a
-                      href="https://github.com/git-dhruv/Graph-BA">Code</a>
+                    <a href="https://github.com/git-dhruv/Graph-BA">Code</a>
 
                     <!-- <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a> -->
                     <p></p>
                     <p>
-                      
+
                       • Applied Non Linear Bundle Adjustment using Horn Schunk Trick on the BAL dataset.
                       <br />
                       • Used Ceres and g2o for solving the problem.
@@ -961,7 +1011,8 @@
                 <td style="padding:0px">
                   <br>
                   <p style="text-align:center;font-size:small;">
-                    Base layout of this webstite: <a href="https://github.com/jonbarron/jonbarron_website">jon barron</a>
+                    Base layout of this webstite: <a href="https://github.com/jonbarron/jonbarron_website">jon
+                      barron</a>
                   </p>
                 </td>
               </tr>
