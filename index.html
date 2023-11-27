@@ -361,6 +361,44 @@
             <table
               style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
+                <!-- pgo -->
+                <tr onmouseout="pgo_stop()" onmouseover="pgo_start()" class="part">
+                  <td style="padding:1px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='pgo_image'>
+                        <img src='images/pgo.gif' width="160">
+
+                      </div>
+                      <img src='images/pgo.gif' width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function pgo_start() {
+                        document.getElementById('pgo_image').style.opacity = "1";
+                      }
+
+                      function pgo_stop() {
+                        document.getElementById('pgo_image').style.opacity = "0";
+                      }
+                      pgo_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+
+                    <papertitle>Pose Graph Optimization</papertitle>
+
+                    <br />
+
+                    <a href="https://github.com/git-dhruv/Pose-Graph-SLAM">Code</a>
+
+                    <p></p>
+                    <p>
+                      • This was a GTSAM learning Project! Formulated a factor graph using ICP based Odometry on Argo AI Driving Dataset. 
+                      <br />
+                      • Performed incremental Smoothing and Mapping (iSAM) to optimize the odometry using GTSAM. 
+                    </p>
+                  </td>
+                </tr>
+                
                 <!-- oscbiped -->
                 <tr onmouseout="oscbiped_stop()" onmouseover="oscbiped_start()" class="part">
                   <td style="padding:1px;width:25%;vertical-align:middle">
