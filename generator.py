@@ -3,6 +3,8 @@ Project layout generator
 Its a simple script that gets shit done faster 
 """
 
+import argparse
+
 
 def main(name):
     text = rf'''
@@ -44,5 +46,8 @@ def main(name):
     with open('out.txt', "w+") as f:
         f.write(text)
 if __name__ == "__main__":
-    projectName = "{name}"
+    parser = argparse.ArgumentParser()
+    parser.add_argument('name', type=str, help='Name of the Project')
+
+    projectName = f"{parser.parse_args().name}"
     main(projectName)
