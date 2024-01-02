@@ -384,7 +384,7 @@
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
 
-                    <papertitle>Pose Graph Optimization</papertitle>
+                    <papertitle>Pose estimation with Error State Kalman Filter</papertitle>
 
                     <br />
 
@@ -392,9 +392,11 @@
 
                     <p></p>
                     <p>
-                      • This was a GTSAM learning Project! Formulated a factor graph using ICP based Odometry on Argo AI Driving Dataset. 
+                      • Used Error State Kalman Filter to optimally combine SE3Tracknet and Classical Method based Pose estimation reducing angular error by 39% on YCB Video Dataset.  
                       <br />
-                      • Performed incremental Smoothing and Mapping (iSAM) to optimize the odometry using GTSAM. 
+                      • Developed a modular and clean pipeline for SE3Tracknet removing bloatware in the orignal code while maintaining all functionality.  
+                      <br />
+                      • Developed a novel Depth Simulator network that simulators real depth noise from synthetic depth resulting in better i.i.d approximation in training and inference data. 
                     </p>
                   </td>
                 </tr>
