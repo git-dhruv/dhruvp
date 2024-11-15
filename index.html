@@ -146,16 +146,18 @@
                       <name>Dhruv Parikh</name>
                     </p>
                     <p>
-                      I am a Masters in Robotics Student at University of Pennsylvania, where I am specializing in state
-                      estimation and perception.
+                      On Nov 1, I got laid off from Tesla and am open to work! I spend my days getting back to my hobby research projects and applying to jobs.  
+                    </p> 
+                      I am a Masters in Robotics Student at University of Pennsylvania, where I specialized in state
+                      estimation and perception. 
                       I did my undergrad in Mechanical Engineering from Ahmedabad University, India where I was working in Mechatronics and Controls.
                     </p>
                     <p>
-                      My most recent experience was working at JPL NASA for development of the lander pose estimation algorithm for the Mars Sample Return Mission. I am currently working on Geometrical problems in vision.
+                      I worked at Tesla for close to 5 months on the C++ stack for Manipulation and Teleop. I also worked on the state estimation and system identification for Gen3 Hands and was the lead triage engineer for the Bar and Snack Bots at Robotaxi Event! 
+                      My other experience was working at JPL NASA for development of the lander pose estimation algorithm for the Mars Sample Return Mission. 
                     </p>
                     <p>
                       I'm always open to engaging conversations and knowledge exchange, so feel free to drop me an email. And just a heads up, if you don't hear back from me within 48 hours, a gentle reminder would be much appreciated!
-
  
                     </p>
                     </p>
@@ -194,6 +196,53 @@
             <table
               style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
+
+                <!------ Tesla -------->
+                <tr onmouseout="tesla_stop()" onmouseover="tesla_start()" class="part">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/tesla.gif' width="160" id='tesla_image' type="video/mp4">
+                    </div>
+                    <script type="text/javascript">
+                      function tesla_start() {
+                        document.getElementById('tesla_image').src = 'https://duet-cdn.vox-cdn.com/thumbor/0x0:480x228/1080x513/filters:focal(240x114:241x115):no_upscale():format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/25670569/Oct_10_202420_33_56_ezgif.com_optimize.gif';
+                      }
+
+                      function tesla_stop() {
+                        document.getElementById('tesla_image').src = 'images/tesla.gif';
+                      }
+                      tesla_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://www.jpl.nasa.gov/">
+                      <papertitle>Tesla Optimus</papertitle>
+                    </a>
+                    <br>
+                    <em>Robotics Machine Learning Engineer</em>, June 2024 - Nov 2024
+                    <br>
+                    <!-- <a href="https://drive.google.com/file/d/1BD4-1cNd4hT-va_fJifCjNum4yOoAopc/view?usp=sharing">Report</a>
+                           /
+                           <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a> -->
+                    <p></p>
+                    <p>
+                      Developed joint angle estimation pipeline for Optimus Gen3 Hands. Using this data, performed system-id for Gen3 hands that was used in Robotaxi event. 
+                      Designed a Probabilistic Roadmap planner for collision-free manipulation and whole-body control for enhanced safety.
+                      Improved C++ Manipulation Stack, supported event-critical tasks, and developed tracking and grasping algorithms for dynamic environments.
+
+                      <br/> Specifics protected under NDA.
+                    </p>
+                  </td>
+                </tr>
+                <!------ Tesla _|_ -------->
+
+
+
+
+
+
+
+
                 <!------- NASA JPL ------->
                 <tr onmouseout="jpl_stop()" onmouseover="jpl_start()" class="part">
                   <td style="padding:20px;width:25%;vertical-align:middle">
@@ -241,6 +290,49 @@
                   </td>
                 </tr>
 
+                <!------ Kostas Lab -------->
+                <tr onmouseout="istudy_stop()" onmouseover="istudy_start()" class="part">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/istudy.png' width="160" id='istudy_image'>
+                    </div>
+                    <script type="text/javascript">
+                      function istudy_start() {
+                        // document.getElementById('agile_image').style.opacity = "1";
+                        document.getElementById('istudy_image').src = 'images/istudy.png';
+                      }
+
+                      function istudy_stop() {
+                        document.getElementById('istudy_image').src = 'https://dioramslam.com/wp-content/uploads/2022/04/event-based-cameras-3.gif';
+                      }
+                      istudy_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://www.jpl.nasa.gov/">
+                      <papertitle>Kostas Daniilidis Group</papertitle>
+                    </a>
+                    <br>
+                    <em>Masters Independent Study</em>, Jan 2024 - May 2024
+                    <br>
+                    <!-- <a href="https://drive.google.com/file/d/1BD4-1cNd4hT-va_fJifCjNum4yOoAopc/view?usp=sharing">Report</a>
+                           /
+                           <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a> -->
+                    <p></p>
+                    <p>
+                       <b>Tried</b> to develop a novel monocular event based visual inertial odometry using self supervised learning, namely contrast maximization. 
+                       Engineered the training pipeline to run on multiple GPUs using Distributed Data Parallel (DDP) and deployed on SLURM cluster.
+                       Formulated a factor graph based backend using IMU preintegration and neural lie algebra constraints optimized by iSAM2 using GTSAM.
+                       <br/>
+                       <b>PS: Results were not impressive at all. But I implemented a lot of algorithms for event cameras and enjoyed working on this!</b>
+                    </p>
+                  </td>
+                </tr>
+                <!------ Kostas Lab -------->
+
+
+
+
                 <!------ Kumar Lab -------->
                 <tr onmouseout="agile_stop()" onmouseover="agile_start()" class="part">
                   <td style="padding:20px;width:25%;vertical-align:middle">
@@ -252,7 +344,7 @@
                         </video>
                       </div> -->
 
-                      <img src='https://www.grasp.upenn.edu/assets/img/svgs/logo.svg' width="160" id='agile_image'>
+                      <img src='https://github.com/anish-bhattacharya/ViT-for-quadrotor-obstacle-avoidance/blob/main/media/multi-3d-3rdview.gif?raw=true' width="160" id='agile_image'>
                     </div>
                     <script type="text/javascript">
                       function agile_start() {
@@ -261,7 +353,7 @@
                       }
 
                       function agile_stop() {
-                        document.getElementById('agile_image').src = 'https://www.grasp.upenn.edu/assets/img/svgs/logo.svg';
+                        document.getElementById('agile_image').src = 'https://github.com/anish-bhattacharya/ViT-for-quadrotor-obstacle-avoidance/blob/main/media/multi-3d-3rdview.gif?raw=true';
                       }
                       agile_stop()
                     </script>
@@ -274,15 +366,11 @@
                     <em><a href="https://www.kumarrobotics.org/people/dhruv-parikh/">Research Assistant</a></em>,
                     2022-2023
                     <br>
-                    <!-- <a href="https://drive.google.com/file/d/1BD4-1cNd4hT-va_fJifCjNum4yOoAopc/view?usp=sharing">Report</a>
+                    <a href="https://www.anishbhattacharya.com/research/vitfly">Paper</a>
                            /
-                           <a href="https://github.com/git-dhruv/Pick-and-Place-for-Franka-Panda/tree/main/labs/final">Code</a> -->
+                           <a href="https://github.com/anish-bhattacharya/ViT-for-quadrotor-obstacle-avoidance">Code</a> 
                     <p>
-                      Implemented end to end behaviour cloning using Deep learning on agile multicopters.
-                      Carried out camera pose estimation to stabilize images during high-speed flight and integrated
-                      with a Neural Network.
-                      Achieved successful autonomous navigation with obstacle avoidance in high-speed flights at speeds
-                      up to 15 m/s.
+                      Developed a model zoo of lightweight architectures - LSTM, Modified Segformer Vision Transformer and CNNs for real-time pure visionbased obstacle avoidance, enabling the drone to autonomously navigate through dynamic obstacle fields at speeds of up to 7 m/s. [Paper]
                     </p>
                   </td>
                 </tr>
